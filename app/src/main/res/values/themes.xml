@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Exam" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <!-- ActionBar specific style -->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/app_color</item>
+        <item name="background">@color/button_color</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="Theme.Exam" parent="Base.Theme.Exam" />
+</resources>
